@@ -1,97 +1,107 @@
-h2{
-  
+/* General corrections */
+h2 {
     text-align: left;
     color: brown;
-    
 }
-h1{
-    text-align: LEFT;
+
+h1 {
+    text-align: left; /* Changed from ALL CAPS to lowercase for standardization */
     color: blue;
 }
-h3{
+
+h3 {
     text-align: left;
     color: brown;
-    font-size: large;
+    font-size: large; /* Note: 'large' is not a valid size unit in CSS. Use '16px', '20px', etc., or '1.25rem', '1.5rem', etc., for larger sizes */
 }
 
 body {
-    
     background-color: rgb(238, 248, 223);
 }
-img{
+
+/* Adjustments for image styling */
+img {
     height: 800px;
     width: 70%;
-    float: bottom;
+    float: none; /* Changed from 'bottom' to 'none' as 'float' property does not accept 'bottom' as a value */
     margin-top: 0ch;
-    
-    
 }
-table{
+
+/* Table styling */
+table {
     width: 70%;
-    padding: 5%cm;
+    padding: 5% 0; /* Corrected padding values to use space between numbers instead of 'cm' */
     text-align: center;
-    
-      
 }
-tr a{
-    font-size:  1.2em;
-	background-color: rgb(241, 192, 127);
-	color: black;
-	text-decoration:none; 
+
+/* Link styling within table rows */
+tr a {
+    font-size: 1.2em;
+    background-color: rgb(241, 192, 127);
+    color: black;
+    text-decoration: none;
     display: block;
-   
 }
+
+/* Hover effect on table cell links */
 td a:hover {
     background-color: brown;
     color: white;
-    pointer-events: all;
-    }
-  
-div.body	{ 
+    pointer-events: none; /* Changed from 'all' to 'none' to allow hover effects */
+}
+
+/* Div styling */
+div.body { 
     width: 70%;
     margin: auto;
-    margin-top: .5em ;
-    margin-bottom: .5em ;
-  }
-  p{
-      color: brown;
-      font-size: large;
-      width: 70%;
-  }
-  
-  table.info td{  
+    margin-top:.5em;
+    margin-bottom:.5em;
+}
+
+/* Paragraph styling */
+p {
+    color: brown;
+    font-size: large; /* Consider specifying a size like '16px' or '1rem' for consistency */
+    width: 70%;
+}
+
+/* Table info cell styling */
+table.info td {  
     border: solid;
     height: 50px; 
-    border-color: brown; 
-    
+    border-color: brown;
 }
-  img#img{
-      width: 100%;
-      
-  }
-  tr.heading{
+
+/* Image ID styling */
+img#img {
+    width: 100%;
+}
+
+/* Heading row styling */
+tr.heading {
     color: brown;
-	background-color: rgb(240, 185, 131);
-    border-style: ridge;
-    border-color: brown;	
-  }
-  nav	{
     background-color: rgb(240, 185, 131);
     border-style: ridge;
     border-color: brown;
-    width: 70%;	
+}
 
-    }
+/* Navigation bar styling */
+nav {
+    background-color: rgb(240, 185, 131);
+    border-style: ridge;
+    border-color: brown;
+    width: 70%;
+}
 
-nav a{
+/* Navigation links styling */
+nav a {
     color: black;
-    padding: 1px 50px ;
+    padding: 1px 50px;
     display: inline;
-    }
+}
 
-nav a:hover	{
+/* Navigation links hover effect */
+nav a:hover {
     background-color: brown;
     display: inline;
-    
-    }
-
+}
